@@ -1,0 +1,268 @@
+//META{"name":"Material Discord","description":"Perfectly simplistic.","author":"Conner Francis and Aiden Brown","version":"1.0"}*// 
+/*Settings*/
+.user-settings-modal.settings {
+    width: 1000px;
+    min-height: 800px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2)
+}
+.need-help-button {
+    border-radius: 50%;
+    border-style: none;
+    background-color: #FF1744;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+    height: 40px;
+    width: 40px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.btn-help {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.need-help-button:hover {
+    color: #ffffff;
+    background-color: #FF3F62;
+}
+/*Avatar Settings*/
+.avatar-large {
+        width: 60px;
+        height: 60px;
+        background-size: 60px 60px;
+        border-radius: 30px;
+        margin-left: 13px;
+    }
+.avatar-small {
+        box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+        margin-bottom: 10px;
+}
+.theme-dark .avatar-large {
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+}
+
+/*Both Theme Settings*/
+.chat {
+    font-family: Roboto;
+}
+.guild-channels {
+    font-family: Roboto Light;
+}
+.guild-header header {
+    font-family: Roboto Black;
+}
+.account {
+    height: 40px;
+}
+
+
+/*Light Theme Chat*/
+.theme-light .message-group {
+    background-color: white;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+    border-color: rgba(0,0,0,0);
+}
+.theme-light .messages-wrapper {
+    background-color: #e6e6e6;
+}.chat .divider > span {
+    background-color: rgba(0,0,0,0);
+}
+
+/*Dark Theme Chat*/
+.theme-dark .message-group {
+    background-color: #363A45;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+    border-color: rgba(0,0,0,0);
+}
+.theme-dark .messages-wrapper {
+    background-color: #2d3039;
+}
+.theme-dark .chat {
+    background-color: #2d3039;
+}
+.theme-dark .chat .divider > span {
+    background-color: rgba(0,0,0,0);
+}
+
+/*Light Theme Left Sidebar*/
+
+
+/*Dark Theme Left Sidebar*/
+.theme-dark .guild-channels {
+    background-color: #2d3039;
+}
+.theme-dark .guilds-wrapper {
+    background-color: #1C1E24;
+}
+.theme-dark .guild-header header {
+    background-color: #2d3039;
+    box-shadow: none;
+}
+.theme-dark .guild-header header:hover {
+    background-color: #363A45;
+}
+.theme-dark .account {
+    background: #2d3039;
+    border: none;
+}
+.theme-dark #voice-connection {
+    background-color: #2d3039;
+    border: none;
+}
+.theme-dark #voice-connection .btn-group {
+    background-color: #2d3039;
+    border: none;
+}
+.theme-dark #voice-connection .btn-disconnect {
+    box-shadow: none;
+    background-color: transparent;
+}
+.theme-dark #voice-connection .btn-info {
+    border: none;
+    background-color: transparent;
+}
+.theme-dark .account .btn-group {
+    border: none;
+}
+.theme-dark .account .btn-deafen, .account .btn-mute {
+    border: none;
+    background-color: transparent;
+}
+.theme-dark .account .btn-deafen, .account .btn-settings {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+.theme-dark .links {
+    background-color: transparent;
+}
+.guilds-add {
+    border: none;
+    background-color: #FF1744;
+    color: white;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+    
+    transition: background-color 0.2s ease;
+}
+
+.guilds-add:hover {
+    background-color: #FF3F62;
+    
+    transition: backgound-color 0.2s ease;
+}
+
+/*Light Theme Header*/
+
+
+/*Dark Theme Header*/
+.theme-dark .title-wrap {
+    background-color: transparent !important;
+}
+.theme-dark .chat>.title-wrap {
+    border-bottom: 0px solid black;
+}
+
+/*Light Theme Right Sidebar*/
+
+
+/*Dark Theme Right Sidebar*/
+.theme-dark .channel-members-wrap {
+    background-color: transparent !important;
+}
+.theme-dark .channel-members {
+    background-color: #2d3039;
+}
+
+/*Text Box*/
+.form {
+    background-color: #2d3039 !important;
+    box-shadow: 0px 1px 3px;
+}
+.channel-textarea-upload {
+    display: none;
+}
+/*dark*/
+.theme-dark .channel-textarea {
+    background-color: #2d3039;
+    border: none;
+}
+
+.theme-dark .channel-textarea-inner {
+    background-color: #2d3039;
+    border: none;
+}
+.theme-dark textarea {
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+    padding: 17px;
+}
+
+.theme-dark .chat form {
+    border: none;
+}
+.theme-light .flex-spacer {
+    background-color: #e6e6e6;
+}
+
+.theme-dark .flex-spacer {
+    background-color: #2d3039;
+}
+.theme-dark .channel-textarea-inner textarea {
+    background-color: #363A45;
+}
+.theme-dark .chat>.content .messages .message-group:not(.has-divider) {
+    border: none;
+}
+
+/*light*/
+.theme-light .channel-textarea {
+    background-color: rgba(0,0,0,0);
+}
+
+.theme-light .channel-textarea-inner {
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+    border-radius: 0px
+}
+
+.theme-light textarea {
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+    padding: 17px;
+}
+
+.theme-light .flex-spacer {
+    background-color: #e6e6e6;
+}
+
+.theme-dark .flex-spacer {
+    background-color: #2d3039;
+}
+.theme
+
+
+/*Title Wrap*/
+.title-wrap {
+    background-color: #363A45;
+}
+.theme-dark .chat .title-wrap {
+    background-color: #363A45;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.2)
+    border-bottom: 0px solid rgba(0,0,0,0);
+}
+.theme-light .chat .title-wrap {
+    background-color: #363A45;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.2)
+    border-bottom: 0px solid rgba(0,0,0,0);
+}
+
+.theme-dark .chat .title-wrap .topic .topic-full {
+    border-bottom: 0px solid rgba(0,0,0,0);
+}
+.theme-light .chat .title-wrap .topic .to1pic-full {
+    border-bottom: 0px solid rgba(0,0,0,0);
+}
