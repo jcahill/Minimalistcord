@@ -1,5 +1,14 @@
-//META{"name":"Minimalistcord","description":"Perfectly simplistic.","author":"Conner Francis and Aiden Brown","version":"1.0"}*// 
+//META{"name":"Minimalistcord","description":"Perfectly simplistic.","author":"Conner Francis and Aiden Brown","version":"0.8"}*// 
 /*Settings*/
+.chat .welcome-message {
+    display: none;
+}
+.invite-button {
+    border: none;
+}
+#twitchcord-button-container {
+    display: none;
+}
 .user-settings-modal.settings {
     width: 1000px;
     min-height: 800px;
@@ -15,7 +24,9 @@
     font-weight: 800;
     font-size: 18px;
 }
-
+.theme-dark .chat>.content .messages .invite-button {
+    background-color: transparent;
+}
 .btn-help {
     font-size: 20px;
     font-weight: 200;
@@ -25,6 +36,20 @@
     color: #ffffff;
     background-color: #FF3F62;
 }
+.guilds .friends-icon {
+    border: none;
+    background-color: #FF1744;
+    color: white;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+    
+    transition: background-color 0.5s ease-in-out;
+}
+.guilds .friends-icon:hover {
+    background-color: #FF3F62;
+    
+    transition: background-color 0.5s ease-in-out;
+}
+
 /*Avatar Settings*/
 .avatar-large {
         width: 60px;
@@ -54,7 +79,19 @@
 .account {
     height: 40px;
 }
-
+.channel-textarea-inner {
+    width: 105%;
+}
+.theme-dark .chat form .typing {
+    background-color: transparent;
+}
+.theme-dark .chat>.content .messages .divider span {
+    background-color: transparent;
+}
+.theme-dark .chat>.content .messages .divider.divider-red>span{
+    opacity: 1;
+    color: #FF1744;
+}
 
 /*Light Theme Chat*/
 .theme-light .message-group {
@@ -99,6 +136,7 @@
 }
 .theme-dark .guilds-wrapper {
     background-color: #1C1E24;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
 }
 .theme-dark .guild-header header {
     background-color: #2d3039;
@@ -142,23 +180,31 @@
 .theme-dark .links {
     background-color: transparent;
 }
-.guilds-add {
+.theme-dark .guilds-add {
     border: none;
     background-color: #FF1744;
     color: white;
     box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
     
-    transition: background-color 0.2s ease;
+    transition: background-color 0.5s ease-in-out;
 }
 
-.guilds-add:hover {
+.theme-dark .guilds-add:hover {
     background-color: #FF3F62;
     
-    transition: backgound-color 0.2s ease;
+    transition: backgound-color 0.5s ease-in-out;
+}
+.theme-dark .guild-header.guild-header-open ul {
+    background-color: #363A45;
+}
+.theme-dark .guild-header.guild-header-close ul {
+    background-color: #363A45;
 }
 
 /*Light Theme Header*/
-
+.chat>.title-wrap>.title .channel-name:before {
+    display: none;
+}
 
 /*Dark Theme Header*/
 .theme-dark .title-wrap {
@@ -178,6 +224,13 @@
 .theme-dark .channel-members {
     background-color: #2d3039;
 }
+.theme-dark .channel-members .invite-btn {
+    background-color: transparent;
+}
+.theme-dark .channel-members .invite-btn:hover {
+    background-color: #363A45;
+}
+
 
 /*Text Box*/
 .form {
