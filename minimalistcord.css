@@ -1,5 +1,8 @@
 //META{"name":"Minimalistcord","description":"Perfectly simplistic.","author":"Conner Francis and Aiden Brown","version":"0.8"}*// 
 /*Settings*/
+.chat .empty-message {
+    display: none;
+}
 .chat .welcome-message {
     display: none;
 }
@@ -92,6 +95,9 @@
     opacity: 1;
     color: #FF1744;
 }
+.theme-dark .chat-empty {
+    background: transparent;
+}
 
 /*Light Theme Chat*/
 .theme-light .message-group {
@@ -125,6 +131,18 @@
 }
 .theme-dark .chat .divider > span {
     background-color: rgba(0,0,0,0);
+}
+.scroller-wrap .scroller::-webkit-scrollbar-thumb, .theme-dark .chat>.content :first-child  .scroller-wrap .scroller::-webkit-scrollbar-thumb{
+    background-clip: padding-box;
+    border: none;
+    border-radius: 3px;
+    background-color: #363A45;
+}
+.theme-dark .chat>.content :first-child .scroller-wrap .scroller::-webkit-scrollbar-track-piece, .scroller-wrap .scroller::-webkit-scrollbar-track-piece  {
+    background-color: transparent;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 0;
 }
 
 /*Light Theme Left Sidebar*/
