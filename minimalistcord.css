@@ -1,4 +1,4 @@
-//META{"name":"Minimalistcord","description":"Perfectly simplistic.","author":"Conner Francis and Aiden Brown","version":"0.8"}*// 
+//META{"name":"Minimalistcord","description":"Perfectly simplistic.","author":"Conner Francis and Aiden Brown","version":"0.87"}*// 
 /*Settings*/
 .chat .empty-message {
     display: none;
@@ -52,6 +52,11 @@
     
     transition: background-color 0.5s ease-in-out;
 }
+.guild-channels ul .channel-text .badge {
+    background-color: #FF1744;
+    border-radius: 0px;
+}
+
 
 /*Avatar Settings*/
 .avatar-large {
@@ -313,6 +318,25 @@
 }
 .theme-dark .guild-header.guild-header-close ul {
     background-color: #363A45;
+}
+.guilds li.audio .guild-inner:after {
+    background-color: #FF1744;
+}
+.guild-channels ul .channel-text.selected:before {
+    border-left: 4px solid #FF1744;
+}
+.guild-channels ul .channel-text.selected:hover {
+    background-color: #FF3F62;
+    transition: border-left 0.2s ease-in-out;
+}
+.guild-channels ul .channel-text.unread:not(.selected):not(.channel-muted):before {
+    background-color: #FF1744;
+}
+.guild-channels ul .channel-text:hover:not(.unread):before {
+    border-left: 4px solid #FF1744;
+}
+.channel-members .member.popout-open, .channel-members .member:hover {
+    background: linear-gradient(to left,#ebebeb 85%,#f3f3f3);
 }
 
 /*Light Theme Header*/
