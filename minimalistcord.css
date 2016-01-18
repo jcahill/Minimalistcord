@@ -63,7 +63,7 @@
     }
 .avatar-small {
         box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-        margin-bottom: 10px;
+    	margin-bottom: 10px;
 }
 .theme-dark .avatar-large {
     box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
@@ -110,7 +110,9 @@
 }
 .theme-light .messages-wrapper {
     background-color: #e6e6e6;
-}.chat .divider > span {
+}
+
+.chat .divider > span {
     background-color: rgba(0,0,0,0);
 }
 
@@ -146,7 +148,101 @@
 }
 
 /*Light Theme Left Sidebar*/
+.theme-light .guild-channels {
+    background-color: #2d3039;
+}
+.theme-light .guilds-wrapper {
+    background-color: #1C1E24;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+}
+.theme-light .guild-header header {
+    background-color: #2d3039;
+    box-shadow: none;
+}
+.theme-light .guild-header header:hover {
+    background-color: #363A45;
+}
+.theme-light .account {
+    background: #2d3039;
+    border: none;
+}
+.theme-light #voice-connection {
+    background-color: #2d3039;
+    border: none;
+}
+.theme-light #voice-connection .btn-group {
+    background-color: #2d3039;
+    border: none;
+}
+.theme-light #voice-connection .btn-disconnect {
+    box-shadow: none;
+    background-color: transparent;
+}
+.theme-light #voice-connection .btn-info {
+    border: none;
+    background-color: transparent;
+}
+.theme-light .account .btn-group {
+    border: none;
+}
+.theme-light .account .btn-deafen, .account .btn-mute {
+    border: none;
+    background-color: transparent;
+}
+.theme-light .account .btn-deafen, .account .btn-settings {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+.theme-light .links {
+    background-color: #2d3039;
+}
 
+.account {
+    height: 40px;
+}
+
+.need-help-button {
+    border-radius: 50%;
+    border-style: none;
+    background-color: #FF1744;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+    height: 40px;
+    width: 40px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.btn-help {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.need-help-button:hover {
+    color: #ffffff;
+    background-color: #FF3F62;
+}
+
+.guilds-add {
+	border: none;
+    background-color: #FF1744;
+    color: white;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+    
+    transition: background-color 0.2s ease;
+}
+
+.guilds-add:hover {
+    background-color: #FF3F62;
+    
+    transition: backgound-color 0.2s ease;
+}
+
+.channel-text.selected {
+    background: -webkit-linear-gradient(left, #ffffff 85%, #2e3136);
+    background: linear-gradient(to right, #fffff 85%, #2e3136);
+}
 
 /*Dark Theme Left Sidebar*/
 .theme-dark .guild-channels {
@@ -233,7 +329,10 @@
 }
 
 /*Light Theme Right Sidebar*/
-
+.channel-members .member:hover {
+	background-color: #2d3039;  
+    background: none;
+}
 
 /*Dark Theme Right Sidebar*/
 .theme-dark .channel-members-wrap {
@@ -313,7 +412,6 @@
 .theme-dark .flex-spacer {
     background-color: #2d3039;
 }
-.theme
 
 
 /*Title Wrap*/
