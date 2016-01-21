@@ -395,6 +395,7 @@
 .theme-dark textarea {
     box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
     padding: 17px;
+    margin-right: 80px;
 }
 
 .theme-dark .chat form {
@@ -428,6 +429,7 @@
 .theme-light textarea {
     box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
     padding: 17px;
+    margin-right: 80px;
 }
 
 .theme-light .flex-spacer {
@@ -437,6 +439,7 @@
 .theme-dark .flex-spacer {
     background-color: #2d3039;
 }
+
 
 
 /*Title Wrap*/
