@@ -1,5 +1,5 @@
 //META{"name":"Minimalistcord","description":"Perfectly simplistic.","author":"Conner Francis and Aiden Brown","version":"0.87"}*// 
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900,300);
 /*Settings*/
 .chat .empty-message {
     display: none;
