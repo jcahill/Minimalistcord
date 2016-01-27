@@ -71,6 +71,17 @@
         box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
     	margin-bottom: 10px;
 }
+
+.guilds li:hover .guild-inner {
+	transition: box-shadow 0.2s ease;   
+}
+.guilds li:hover .guild-inner {
+	margin-top: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+    transition: box-shadow 0.2s ease;
+}
+
 .theme-dark .avatar-large {
     box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
 }
@@ -82,9 +93,16 @@
 .guild-channels {
     font-family: Roboto Light;
 }
-.guild-header header {
+guild-header header {
     font-family: Roboto Black;
 }
+.guild-header {
+	background-color: rgba(0,0,0,0)   
+}
+.guild-header ul {
+	background-color: none;   
+}
+
 .account {
     height: 40px;
 }
@@ -146,7 +164,15 @@
     border-radius: 3px;
     background-color: #363A45;
 }
+
 .theme-dark .chat>.content :first-child .scroller-wrap .scroller::-webkit-scrollbar-track-piece, .scroller-wrap .scroller::-webkit-scrollbar-track-piece  {
+    background-color: transparent;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 0;
+}
+
+.theme-dark .chat>.content :first-child .scroller-wrap .scroller::-webkit-scrollbar-track-piece, .scroller-wrap .scroller::-webkit-scrollbar-track-piece :hover {
     background-color: transparent;
     background-clip: padding-box;
     border: none;
@@ -162,12 +188,12 @@
     box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
 }
 }
-.theme-light .guild-header header {
-    background-color: #2d3039;
+.guild-header header {
+    background-color: rgba(0,0,0,0)!important;
     box-shadow: none;
 }
-.theme-light .guild-header header:hover {
-    background-color: #363A45;
+.guild-header header:hover {
+    background-color: #363A45 !important;
 }
 .theme-light .account {
     background: #2d3039;
@@ -254,11 +280,11 @@
 .theme-dark .guild-channels {
     background-color: #2d3039;
 }
-.theme-dark .guilds-wrapper {
+.guilds-wrapper {
     background-color: #1C1E24;
     box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
 }
-.theme-dark .guild-header header {
+.guild-header header {
     background-color: #2d3039;
     box-shadow: none;
 }
@@ -430,6 +456,8 @@
     box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
     padding: 17px;
     margin-right: 80px;
+    
+    transition: box-shadow 0.3s ease;
 }
 
 .theme-light .flex-spacer {
@@ -439,8 +467,6 @@
 .theme-dark .flex-spacer {
     background-color: #2d3039;
 }
-
-
 
 /*Title Wrap*/
 .title-wrap {
@@ -460,6 +486,6 @@
 .theme-dark .chat .title-wrap .topic .topic-full {
     border-bottom: 0px solid rgba(0,0,0,0);
 }
-.theme-light .chat .title-wrap .topic .to1pic-full {
+.theme-light .chat .title-wrap .topic .topic-full {
     border-bottom: 0px solid rgba(0,0,0,0);
 }
