@@ -380,9 +380,8 @@ guild-header header {
 }
 
 /*Light Theme Right Sidebar*/
-.channel-members .member:hover {
-	background-color: #2d3039;  
-    background: none;
+.channel-members{
+	background-color: #e6e6e6;  
 }
 
 /*Dark Theme Right Sidebar*/
