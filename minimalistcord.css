@@ -1,6 +1,36 @@
 //META{"name":"Minimalistcord","description":"Perfectly simplistic.","author":"Conner Francis and Aiden Brown","version":"0.87"}*// 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,900,300);
 /*Settings*/
+.popout header {
+    background-color: #0D47A1;
+}
+.message-group .btn-option {
+    opacity: 0;
+    visibility: visible;
+    transition: opacity 0.2s ease-in-out;
+}
+.message-group .btn-option.popout-open, .message-group .comment>div:hover .btn-option {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+.guilds li.active .guild-inner:before {
+    background: #FF1744;
+}
+.user-name {
+    opacity: 0.85;
+    transition: opacity 0.5s ease-in-out;
+}
+.user-name:hover {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    text-decoration: none;
+}
+.message-group .mentioned .message-text {
+    background: rgba(255, 23, 68, 0.2);
+}
+.message-group .mentioned .message-text:after {
+    border-left: 4px solid #FF1744;
+}
 .chat .empty-message {
     display: none;
 }
@@ -93,7 +123,7 @@
 .guild-channels {
     font-family: Roboto Light;
 }
-guild-header header {
+.guild-header header {
     font-family: Roboto Black;
 }
 .guild-header {
@@ -177,6 +207,9 @@ guild-header header {
     background-clip: padding-box;
     border: none;
     border-radius: 0;
+}
+.theme-dark .chat>.content .messages .mentioned .message-text {
+    background: rgba(255, 23, 68, 0.1);
 }
 
 /*Light Theme Left Sidebar*/
@@ -364,6 +397,9 @@ guild-header header {
 }
 .channel-members .member.popout-open, .channel-members .member:hover {
     background: linear-gradient(to left,#ebebeb 85%,#f3f3f3);
+}
+.private-channels {
+    background-color: #2d3039
 }
 
 /*Light Theme Header*/
