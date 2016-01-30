@@ -90,6 +90,17 @@
 
 
 /*Avatar Settings*/
+.channel-members .avatar-small .status {
+    bottom: 1px;
+    right: -1px;
+    border: none;
+}
+.online {
+    background-color: #2ecc71;
+}
+.idle {
+    background-color: #e67e22;
+}
 .avatar-large {
         width: 60px;
         height: 60px;
