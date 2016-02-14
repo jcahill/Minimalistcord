@@ -1,8 +1,72 @@
-//META{"name":"Minimalistcord","description":"Perfectly simplistic.","author":"Conner Francis and Aiden Brown","version":"0.87"}*// 
+//META{"name":"Minimalistcord","description":"Perfectly simplistic.","author":"Conner Francis and Aiden Brown","version":"0.87"}*//
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,900,300);
 /*Settings*/
+.settings .settings-header {
+  background-color: transparent;
+}
 .popout header {
-    background-color: #0D47A1;
+    background-color: #31343d;
+}
+.popout section {
+    background-color: #3c404b;
+}
+.slider-handle {
+  border: none;
+  width: 18px;
+  margin-left: -4px;
+  height: 18px;
+  top: -5px;
+  border-radius: 24px;
+}
+.slider-handle, .slider-handle span {
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+.slider-bar {
+  background: transparent;
+}
+.slider-bar-fill {
+  background: #FF1744;
+}
+.user-popout .user-popout-options .btn.btn-server {
+  border: none;
+  border-radius: 0px;
+  color: white;
+  transition: color 0.2s ease-in-out;
+}
+.user-popout .user-popout-options .btn:hover {
+  background-color: rgba(49, 52, 61, 0.75);
+  transition: color 0.2s ease-in-out;
+}
+.guild-channels ul .channel-voice-states li.speaking {
+  color: #2ecc71;
+  transition: color 0.3s ease-in-out;
+}
+.guild-channels ul .channel-voice-states li{
+  transition: color 0.2s ease-in-out;
+}
+.guild-channels ul .channel-voice-states li.speaking .avatar-small {
+  border: 2px solid transparent;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+.guild-channels ul .channel-voice-states li .avatar-small {
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+.member-roles .member-role {
+  background-color: transparent;
+  border: none;
+}
+.member-roles .member-role>.name {
+  color: white;
+}
+.user-popout .user-popout-options .btn {
+  border: none;
+  border-radius: 0px;
+  background-color: #31343d;
+  transition: color 0.2s ease-in-out;
+}
+.user-popout .user-popout-options .btn.btn-server:hover {
+  background-color: rgba(60, 64, 75, 0.75);
+  transition: color 0.2s ease-in-out;
 }
 .message-group .btn-option {
     opacity: 0;
@@ -75,17 +139,20 @@
     background-color: #FF1744;
     color: white;
     box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
-    
+
     transition: background-color 0.5s ease-in-out;
 }
 .guilds .friends-icon:hover {
     background-color: #FF3F62;
-    
+
     transition: background-color 0.5s ease-in-out;
 }
 .guild-channels ul .channel-text .badge {
     background-color: #FF1744;
     border-radius: 0px;
+}
+.guilds li.active .guild-inner {
+  border-radius: 24px;
 }
 
 
@@ -113,22 +180,17 @@
     	margin-bottom: 10px;
 }
 
-.avatar-small .status.online {
-	box-shadow: 0px 1px 3px rgba(0,0,0,0.1);   
-}
-
 .guilds li:hover .guild-inner {
-	transition: box-shadow 0.2s ease;   
+	transition: box-shadow 0.2s ease;
 }
 .guilds li:hover .guild-inner {
-	margin-top: 10px;
     border-radius: 50%;
     box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
     transition: box-shadow 0.2s ease;
 }
 
 .theme-dark .avatar-large {
-    text-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
 }
 
 /*Both Theme Settings*/
@@ -142,17 +204,17 @@
     font-family: Roboto Black;
 }
 .guild-header {
-	background-color: rgba(0,0,0,0)   
+	background-color: rgba(0,0,0,0)
 }
 .guild-header ul {
-	background-color: none;   
+	background-color: none;
 }
 
 .account {
     height: 40px;
 }
 .channel-textarea-inner {
-    width: 105%;
+    width: 100%;
 }
 .theme-dark .chat form .typing {
     background-color: transparent;
@@ -167,12 +229,7 @@
 .theme-dark .chat-empty {
     background: transparent;
 }
-
-.channel-members .member .member-username {
-	text-shadow: 0px 1px 3px rgba(0,0,0,0.1);
-    font-weight: 100px;
-}
-
+.channel-textarea {}
 /*Light Theme Chat*/
 .theme-light .message-group {
     background-color: white;
@@ -198,6 +255,9 @@
     margin-right: 20px;
     box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
     border-color: rgba(0,0,0,0);
+}
+.theme-dark .chat>.content .messages .message-group h2 strong:hover {
+  text-decoration: none;
 }
 .theme-dark .messages-wrapper {
     background-color: #2d3039;
@@ -236,19 +296,11 @@
 .theme-light .guild-channels {
     background-color: #2d3039;
 }
-.guild-channels ul .channel-text.selected {
-    background: transparent linear-gradient(90deg, #2d3039 85%, #2d3039) repeat scroll 0% 0%;
-}
-.guild-channels ul .channel-text:hover {
-    background: transparent linear-gradient(90deg, #2d3039 85%, #2d3039) repeat scroll 0% 0%;
-}
-
 .theme-light .guilds-wrapper {
     background-color: #1C1E24;
     box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
 }
 }
-
 .guild-header header {
     background-color: rgba(0,0,0,0)!important;
     box-shadow: none;
@@ -322,13 +374,13 @@
     background-color: #FF1744;
     color: white;
     box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
-    
+
     transition: background-color 0.2s ease;
 }
 
 .guilds-add:hover {
     background-color: #FF3F62;
-    
+
     transition: backgound-color 0.2s ease;
 }
 
@@ -392,13 +444,13 @@
     background-color: #FF1744;
     color: white;
     box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
-    
+
     transition: background-color 0.5s ease-in-out;
 }
 
 .theme-dark .guilds-add:hover {
     background-color: #FF3F62;
-    
+
     transition: backgound-color 0.5s ease-in-out;
 }
 .theme-dark .guild-header.guild-header-open ul {
@@ -427,7 +479,7 @@
     background: linear-gradient(to left,#ebebeb 85%,#f3f3f3);
 }
 .private-channels {
-    background-color: #2d3039
+    background-color: #2d3039;
 }
 
 /*Light Theme Header*/
@@ -445,7 +497,7 @@
 
 /*Light Theme Right Sidebar*/
 .channel-members{
-	background-color: #e6e6e6;  
+	background-color: #e6e6e6;
 }
 
 /*Dark Theme Right Sidebar*/
@@ -519,7 +571,7 @@
     box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
     padding: 17px;
     margin-right: 80px;
-    
+
     transition: box-shadow 0.3s ease;
 }
 
