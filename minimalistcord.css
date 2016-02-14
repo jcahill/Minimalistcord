@@ -423,7 +423,11 @@
   color: white;
 }
 .theme-light .chat>.content .messages .message-group .comment .markup {
-  color: black;
+  color: rgb(54, 54, 54);
+}
+.theme-light .chat>.content .messages .message-group .comment .markup code.inline, .theme-dark .chat>.content .messages .message-group .comment .markup pre code
+{
+  background: rgb(179, 179, 179);
 }
 .theme-dark .chat-empty
 {
