@@ -4,6 +4,40 @@
 .settings .settings-header {
   background-color: transparent;
 }
+.theme-dark .chat>.content .messages .message-group a:hover {
+  text-decoration: none;
+}
+.message-group .comment .markup {
+  color: white;
+}
+.form .form-header {
+  background-color: #31343d;
+  border: none;
+  border-radius: 0px;
+}
+.form .form-inner {
+  background-color: #3c404b;
+}
+.form .btn.red {
+  background: #FF1744;
+}
+.form .btn.red:hover {
+  background-color: #FF3F62;
+}
+.form .form-actions {
+  border: none;
+  background-color: #3c404b;
+}
+.form .btn-default {
+  background-color: #3c404b;
+  border: none;
+}
+.form header {
+  color: white;
+}
+.modal-content .form-inner p {
+  color: white;
+}
 .popout header {
     background-color: #31343d;
 }
@@ -62,7 +96,7 @@
   color: #2ecc71;
 }
 .guild-channels ul .channel-voice-states li.speaking {
-  color: #FF1744;
+  color: #2ecc71;
   transition: color 0.3s ease-in-out;
 }
 .guild-channels ul .channel-voice-states li{
@@ -218,6 +252,9 @@
 }
 
 /*Both Theme Settings*/
+.guild-channels header h2 {
+  opacity: 1;
+}
 .chat {
     font-family: Roboto;
 }
