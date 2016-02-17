@@ -1,15 +1,45 @@
 //META{"name":"Minimalistcord","description":"Perfectly simplistic.","author":"Conner Francis and Aiden Brown","version":"0.91"}*//
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,900,300);
 /*Settings*/
+.settings .settings-inner {
+  background-color: #3c404b !important;
+}
 .settings .settings-header
 {
-    background-color: transparent;
+    background-color: #31343d;
+}
+.tab-bar.SIDE {
+  overflow-y: hidden;
+}
+.form .control-group input[type=email], .form .control-group input[type=password], .form .control-group input[type=text], .form .control-group textarea, .form .control-group .has-value .Select-placeholder {
+  background-color: transparent;
+  color: white;
+}
+.settings .settings-right {
+  border-radius: 0px !important;
+}
+.settings .settings-actions {
+  border-radius: 0px;
+  background-color: #3c404b;
+}
+.tab-bar.SIDE {
+  border: none;
 }
 .checkbox .checkbox-inner+span {
     color: white;
 }
-.form .control-group .Select-control {
+.Select {
+  color: white !important;
+}
+.Select-control {
   border: none;
+  background-color: transparent;
+}
+.Select-control:hover {
+  box-shadow: none;
+}
+.form .control-group .Select-control {
+  border: none !important;
 }
 .form .btn-primary {
     background-color: #ff1744;
@@ -370,6 +400,8 @@
 .guild-channels header h2
 {
     opacity: 1;
+    text-transform: lowercase;
+    font-size: 15px;
 }
 .chat
 {
@@ -456,15 +488,29 @@
 }
 
 /*Dark Theme Chat*/
+.chat .new-messages-bar {
+  border-radius: 0px;
+  background-color: #ff1744;
+  right: 34px;
+  left: 20px;
+}
+.chat .new-messages-bar:hover {
+  background-color: #ff3f62;
+}
+.chat .new-messages-bar button:last-child {
+  text-transform: lowercase;
+  color: white;
+}
 .theme-dark .message-group
 {
     margin-right: 20px;
     margin-bottom: 10px;
     margin-left: 20px;
 
-    border-color: rgba(0,0,0,0);
+    border: none;
     background-color: #363a45;
     box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    border-radius: 2px;
 }
 .theme-dark .chat > .content .messages .message-group h2 strong:hover
 {
@@ -738,6 +784,13 @@
 .private-channels
 {
     background-color: #2d3039;
+}
+.channel-members h2 {
+  text-transform: none;
+  font-size: 14px;
+}
+.theme-dark .channel-members h2 {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /*Light Theme Header*/
