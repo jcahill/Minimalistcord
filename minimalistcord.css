@@ -4,6 +4,21 @@
 .settings .settings-inner {
   background-color: #3c404b !important;
 }
+.theme-dark .channel-members .member.popout-open, .theme-dark .channel-members .member:hover {
+  background: #1c1e24;
+  transition: background .2s ease-in-out;
+}
+.theme-dark .channel-members .member {
+  width: 76%;
+  border-radius: 2px;
+  transition: background .2s ease-in-out;
+}
+.user-settings-modal a {
+  color: #ff1744;
+}
+.user-settings-modal a:hover {
+  color: #ff3f62;
+}
 .settings .settings-header
 {
     background-color: #31343d;
@@ -14,6 +29,10 @@
 .form .control-group input[type=email], .form .control-group input[type=password], .form .control-group input[type=text], .form .control-group textarea, .form .control-group .has-value .Select-placeholder {
   background-color: transparent;
   color: white;
+  border-bottom: 2px solid transparent;
+}
+.form .control-group input[type=email]:focus, .form .control-group input[type=password]:focus, .form .control-group input[type=text]:focus, .form .control-group textarea:focus, .form .control-group .has-value .Select-placeholder:focus {
+  border-bottom: 2px solid #ff1744;
 }
 .settings .settings-right {
   border-radius: 0px !important;
@@ -21,6 +40,7 @@
 .settings .settings-actions {
   border-radius: 0px;
   background-color: #3c404b;
+  border: none;
 }
 .tab-bar.SIDE {
   border: none;
@@ -762,11 +782,18 @@
 {
     border-left: 4px solid #ff1744;
 }
-.guild-channels ul .channel-text.selected:hover
+.private-channels .channel.selected:before {
+    transition: border-left .2s ease-in-out;
+    border-left: 4px solid #ff1744;
+}
+.guild-channels ul .channel-text:hover:not(.unread):before
 {
     transition: border-left .2s ease-in-out;
-
-    background-color: #ff3f62;
+    border-left: 4px solid #ff1744;
+}
+.private-channels .channel:hover:before {
+    transition: border-left .2s ease-in-out;
+    border-left: 4px solid #ff1744;
 }
 .guild-channels ul .channel-text.unread:not(.selected):not(.channel-muted):before
 {
