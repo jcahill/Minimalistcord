@@ -1,6 +1,10 @@
 //META{"name":"Minimalistcord","description":"Perfectly simplistic.","author":"Conner Francis and Aiden Brown","version":"0.91"}*//
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,900,300);
 /*Settings*/
+.modal {
+ color: white;
+}
+
 .settings .settings-inner {
   background-color: #3c404b !important;
 }
@@ -109,7 +113,6 @@
 }
 .modal-content .form-inner p
 {
-    color: white;
 }
 .popout header
 {
@@ -970,4 +973,11 @@
 .theme-light .chat .title-wrap .topic .topic-full
 {
     border-bottom: 0 solid rgba(0,0,0,0);
+}
+
+/* Clock plugin by Jiiks */
+/*in beta, not styled that well*/
+#clockPluginClock {
+    background-color: #2d3039;
+    color: white;
 }
