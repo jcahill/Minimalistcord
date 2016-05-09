@@ -749,9 +749,9 @@
     background-color: transparent;
     box-shadow: none;
 }
-.theme-dark .links
+.links
 {
-    background-color: transparent;
+    background-color: #2d3039;
 }
 .theme-dark .guilds-add
 {
